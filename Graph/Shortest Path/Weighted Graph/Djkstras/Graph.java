@@ -75,13 +75,7 @@ public class Graph
 			{
 				System.out.println("Source and destination are not connected");
 				return;
-			}
-			if(s == d )
-			{
-				System.out.println("Minimum cost = 0\npath = "+s+" "+d);
-				return;
-			}
-			
+			}			
 			shortestPath(s,parent,dist);
 			Vector<Integer> v = new Vector<Integer>();
 			int temp = d;
