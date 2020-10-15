@@ -145,7 +145,7 @@ public class Avl
 			t.right = insert(t.right,x);
 			if(balanceFactori(t) == 2)
 			{
-				if(x>t.data)
+				if(x>t.right.data)
 				{
 					t = rr(t);
 				}
